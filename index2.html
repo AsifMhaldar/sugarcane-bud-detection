@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugarcane Bud Detection</title>
+  <link rel="stylesheet" href="./index2.css">
+</head>
+<body>
+
+  <!-- First Page -->
+  <div class="container1">
+    <div class="first-page">
+      <div class="image-container">
+          <img src="./sugarcane-439880_1280.jpg" alt="Sugarcane-Background-Image">
+          <h1>SUGARCANE BUD DETECTION</h1>
+          <button id="get-started-btn">Get Started</button> <!-- Added Button -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Page (Container2) -->
+<div class="container2" id="detection-section">
+  <h1>Sugarcane Bud Detection</h1>
+  <form id="upload-form">
+    <input type="file" id="file-input" accept="image/*" required />
+    <button type="submit">Detect Bud</button>
+  </form>
+  
+  <!-- Display Input Image -->
+  <div class="input-output">
+    <div id="input-image-container">
+      <h3>Input Image:</h3>
+      <img id="input-image" alt="Input Image" />
+    </div>
+  
+    <!-- Result section styling -->
+    <div id="result">
+      <h2>Detection Result:</h2>
+      <img id="detected-image" alt="Detected Result" />
+      <div id="info"></div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="./index2.js"></script>
+</body>
+</html>
